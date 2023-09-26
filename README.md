@@ -11,6 +11,7 @@ With it, you can:
 
 The project has a `words.csv` file that contains 181 words and definitions, adapted from [sat-words by Scholars' Academy](https://github.com/scholarsnyc/sat-words). All the words you add are appended to this main file.
 With the field names `word` and `definition`, the structure of the file simply looks like this:
+
 ```
 word,definition
 arrogate,to take without justification
@@ -24,17 +25,54 @@ Vocab-build uses the [Rich library](https://github.com/Textualize/rich) to style
 
 [Free Dictionary API](https://github.com/meetDeveloper/freeDictionaryAPI) is used for finding the definitions of words, as well as for finding the audio URL of a pronunciation.
 
+### Clone the repository:
+
+```
+git clone git@github.com:rivea0/vocab-build.git
+```
+
+### `cd` into it:
+
+```
+cd vocab-build
+```
+
+### Create a virtual environment:
+
+```
+python -m venv vb-env
+```
+
+or:
+
+```
+python3 -m venv vb-env
+```
+
+
+### Activate it:
+
+##### Unix/MacOS:
+
+```
+source vb-env/bin/activate
+```
+
+##### Windows:
+
+```
+vb-env\Scripts\activate.bat
+```
 
 ### Install requirements:
 ```
 python -m pip install -r requirements.txt
 ```
 
-
 ### The opening screen
-If the program is run without any optional arguments (i.e., `python project.py`), the opening screen that is shown in the image below is displayed:
+If the program is run without any optional arguments (i.e., `python project.py`), the opening screen like the one shown in the image below is displayed:
 
-![The opening screen](./readme-images/opening_screen.jpg)
+![The opening screen](./readme-images/opening-screen.png)
 
 A "welcome" figlet (created with [pyfiglet](https://pypi.org/project/pyfiglet/)) is shown, followed by a table, informing the user of optional arguments to use to help them choose an action.
 
@@ -80,16 +118,9 @@ With the option `--play` or, `-p`, the user can play a "quiz game" where they ar
 
 A random word from the `words.csv` file and four definitions (one of them being the correct one, and the rest being randomly chosen) are displayed.
 
-![A word and four definitions displayed](./readme-images/play_n.jpg)
-
-
 The user enters the number of the definition they choose, and if it is correct, a success message is displayed before continuing to the next question.
 
-![Correct answer](./readme-images/play_c.jpg)
-
 If the user gives the wrong answer, an informing message as well as the correct answer is displayed before continuing to the next question.
-
-![Wrong answer](./readme-images/play_w.jpg)
 
 The game continues until the user chooses to exit the game.
 
@@ -103,8 +134,8 @@ The project consists of four Python files, one of them being the test file, as w
 
 ### Requirements
 The project requires the following packages:
-- pyfiglet==0.8.post1
-- requests==2.28.1
+- pyfiglet==1.0.2
+- requests==2.31.0
 - rich==12.5.1
 
 For testing:

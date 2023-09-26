@@ -83,7 +83,9 @@ To add a word, the optional argument `--word` or, `-w` is used, followed by a wo
 
 [Free Dictionary API](https://github.com/meetDeveloper/freeDictionaryAPI) is used to find the definition of the word. If the operation is successful, the word and its definition are added to the `words.csv` file. The definition is displayed on the terminal as well as a message informing the user that the operation is successful as such:
 
-![Adding a word](./readme-images/word.jpg)
+
+https://github.com/rivea0/vocab-build/assets/58330360/3cea57ee-8b9c-4246-840b-a839a8bf10da
+
 
 ### Downloading the audio of the pronunciation of a word
 To download the audio file of the pronunciation of a word, the optional argument `--sound` or, `-s` is used, followed by a word of choice.
@@ -115,6 +117,12 @@ If the operation is successful, the new words are added to `words.csv`, and a su
 With the option `--play` or, `-p`, the user can play a "quiz game" where they are asked to find the correct definitions of words.
 
 `python project.py -p`
+
+**Demo**:
+
+
+https://github.com/rivea0/vocab-build/assets/58330360/12def314-9470-444f-ae91-424ca494f248
+
 
 A random word from the `words.csv` file and four definitions (one of them being the correct one, and the rest being randomly chosen) are displayed.
 
